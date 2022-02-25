@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa no Google</title>
+</head>
+<body>
+  <h3>Pesquisa no Google</h3>
+  <form action="https://www.google.com/search" method="get">
+    <label for="search">O que você procura?</label>
+    <!-- 
+        para pesquisar no Google é necessário que
+        o atributo "name" tenha o valor "q"
+    -->
+    <input type="text" name="q" id="search" placeholder="Nasa, Beyonce..." autocomplete="off" required>
+    <input type="submit" value="Pesquisar">
+  </form>
+
+  <hr>
+
+  <form>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+</body>
+</html>

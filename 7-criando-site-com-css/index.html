@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criando um site com CSS</title>
+    <style>
+        :root{
+            --new-yellow:#f1c40f;
+            --new-blue:#2c3e50;
+            --new-red:#e74c3c;
+            --new-white:#ffffff;
+            --new-black:#000000;
+        }
+        body{
+            background-color: var(--new-blue);
+            color: var(--new-white);
+        }
+        h3{
+            color: var(--new-yellow);
+        }
+        h2{
+            background-color: var(--new-yellow);
+            color: var(--new-black);
+            border: 2px solid;
+        }
+        .destaque{
+            color: var(--new-red);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Treinamento para astronautas</h1>
+        <section>
+            <h3>Dias da semana</h3>
+            <ul>
+                <li>Segunda</li>
+                <li>Terça</li>
+                <li>Quarta</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Segunda</h2>
+            <ul>
+                <li>Condicionamento cardiorespiratorio</li>
+                <li>Aula de mecânica</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Terça</h2>
+            <ul>
+                <li>Treinamento em gravidade zero</li>
+                <li class="destaque">Aula sobre astronomia</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Quarta</h2>
+            <ul>
+                <li>Aula sobre coleta de material científico</li>
+                <li class="destaque">Aula sobre astronomia</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
