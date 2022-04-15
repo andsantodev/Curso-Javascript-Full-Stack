@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletores para Formulários</title>
+</head>
+<body>
+  <form action="">
+    <div>
+      <label for="">Nome:</label>
+      <input type="text" name="name">
+    </div><br>
+    <div>
+      <label for="">Cor primaria:</label>
+      <select name="color" id="">
+        <option value="yellow">Amarelo</option>
+        <option value="blue">Azul</option>
+        <option value="red">Vermelho</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="">Gosta de programar?</label><br>
+      <input type="radio" name="like-programming" value="sim" checked>Sim
+      <input type="radio" name="like-programming" value="não">Não
+    </div><br>
+    <div>
+      <label for="">Conhecimento em programação</label><br>
+      <input type="checkbox" name="developer-options" value="html">HTML
+      <input type="checkbox" name="developer-options" value="css">CSS
+      <input type="checkbox" name="developer-options" value="javascript">javascript
+      <input type="checkbox" name="developer-options" value="express">Express
+    </div><br>
+
+    <button type="button" onclick="showInfo()">Mostrar dados</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>

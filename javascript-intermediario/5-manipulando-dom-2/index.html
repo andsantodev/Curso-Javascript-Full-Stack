@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando DOM</title>
+</head>
+<body>
+  <h1>Manipulando DOM</h1>
+  <h2>Sistema que cria uma lista de casas</h2>
+
+  <form action="" id="cadastro">
+    <div>
+      <label>Número da casa:</label>
+      <input type="number" name="numero">
+      <br><br>
+    </div>
+    <div>
+      <label>Bairro:</label>
+      <input type="text" name="bairro">
+      <br><br>
+    </div>
+    <div>
+      <label>Cidade:</label>
+      <input type="text" name="cidade">
+      <br><br>
+    </div>
+    <div>
+      <label>Área da casa:</label>
+      <input type="text" name="area">
+      <br><br>
+    </div>
+
+    <!-- por padrão o button é submit, então sempre add o type para nao executar a função enviar -->
+    <button onclick="adicionarCasa()" type="button">Adicionar</button>
+  </form>
+
+  <hr>
+
+  <ul id="lista-casas"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>

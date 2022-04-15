@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    # Cadastrar imóveis e exibir para os clientes
+    # No cadastro informa: tipo (casa ou AP), tamanho da ára, se esta alugado ou nao.
+    Apos o cadastro o formulario deve ser limpo
+    # Abaixo do formulario deve haver uma lista com os imoveis atualizados automaticamente
+    Nessa lista os imoveis alugados devem estar com a marcação de ALUGADO (antes da primeira informação, com fundo vermelho e letras brancas)
+    e no final a corretora pode remover um imovel cadastrado
+
+    ter pelo menos 2 classes de objeto (uma para imovel e outra para a aplicação)
+    somente uma classe por arquivo
+
+    manipular o DOM
+    chamar eventos a partir do html
+   -->
+
+  <h2>Sistema de cadastro de imóveis</h2>
+
+  <form action="" onsubmit="app.addImovel()">
+    <div>
+      <label for="">Tipo do imóvel:</label>
+      <select name="tipoImovel" id="">
+        <option value="Casa">Casa</option>
+        <option value="Apartamento">Apartamento</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="">Área:</label>
+      <input type="number" name="area" min="0">
+    </div><br>
+    <div>
+      <label for="">Esta alugado?</label><br>
+      <input type="radio" value="Sim" name="esta-alugado" id="">Sim
+      <input type="radio" value="Não" name="esta-alugado" checked id="">Não
+    </div>
+
+    <br>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <ul id="lista-imoveis"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>
